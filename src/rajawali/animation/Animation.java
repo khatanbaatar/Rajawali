@@ -264,6 +264,7 @@ public abstract class Animation extends Playable {
 					eventRepeat();
 				} else {
 					eventEnd();
+					mNumRepeat = 0;
 					return;
 				}
 				break;
@@ -276,6 +277,8 @@ public abstract class Animation extends Playable {
 					eventRepeat();
 				} else {
 					eventEnd();
+					mNumRepeat = 0;
+					mIsReversing = false;
 					return;
 				}
 				break;
